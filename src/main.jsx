@@ -8,9 +8,8 @@ import './index.css'
 import Faq from './Faq/Faq.jsx'
 import Login from './Login/Login.jsx'
 import Home from "./Home/Home.jsx"
-import Chatbot from './Chatbot/chatbot.jsx';
+import Chatbot from './Chatbot/Chatbot.jsx'
 import Translate from './Translator/Translate.jsx'
-
 const router = createBrowserRouter([
   {
     path: '/',
