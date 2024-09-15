@@ -1,0 +1,64 @@
+.translate-container {
+  width: 80%;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.translate-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.translate-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.translate-form select,
+.translate-form textarea,
+.translate-form button {
+  margin-bottom: 15px;
+}
+
+.translate-form select,
+.translate-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.translate-form textarea {
+  min-height: 100px;
+}
+
+.translate-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.translate-form button:hover {
+  background-color: #0056b3;
+}
+
+.translated-text {
+  margin-top: 20px;
+}
+
+.translated-text h3 {
+  margin-bottom: 10px;
+}
+
+.translated-text p {
+  padding: 10px;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  font-size: 1rem;
+}

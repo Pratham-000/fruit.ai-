@@ -1,0 +1,131 @@
+.faq-container {
+  width: 80%;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.faq-title, .fruit-facts-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  position: relative; /* To position edit/delete buttons */
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  background-color: #ddd;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #ccc;
+}
+
+.faq-answer-wrapper {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+}
+
+.faq-answer-wrapper.show {
+  max-height: 500px; /* Adjust this value based on the content height */
+}
+
+.faq-answer-content {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.faq-question.active {
+  background-color: #bbb;
+}
+
+/* Fruit image styling */
+.fruit-image {
+  width: 40px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Edit and Delete buttons */
+.faq-edit-btn, .faq-delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-delete-btn {
+  background-color: #dc3545;
+}
+
+.faq-edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.faq-delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Form for Adding/Editing FAQ */
+.add-faq-form {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e9e9e9;
+  border-radius: 8px;
+}
+
+.add-faq-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.add-faq-form input, .add-faq-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.add-faq-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-faq-form button:hover {
+  background-color: #218838;
+}

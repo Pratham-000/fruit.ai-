@@ -1,0 +1,212 @@
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 80vh;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.chat-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chat-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px; /* To avoid content sticking to the scrollbar */
+}
+
+.chat-message {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 70%;
+}
+
+.user-message {
+    background-color: #444;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #555;
+    align-self: flex-start;
+}
+
+.fruit-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between; /* Distribute space evenly */
+    margin-bottom: 10px;
+    gap: 10px; /* Gap between cards */
+}
+
+.fruit-card {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+    flex: 1 1 calc(33.333% - 10px); /* Adjust to fit 3 cards per row */
+}
+
+.fruit-card:hover {
+    transform: scale(1.05);
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Spacing above controls */
+}
+
+.quantity-controls button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.2s;
+}
+
+.quantity-controls button:hover {
+    background-color: #777;
+}
+
+.quantity-controls span {
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.quantity-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.add-to-cart-btn {
+    background-color: #666;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; /* Spacing between quantity controls and button */
+    transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #777;
+}
+
+.chat-input-container {
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically on small screens */
+    margin-bottom: 20px; /* Spacing between chat area and input */
+}
+
+.chat-input-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    margin-bottom: 10px; /* Space between input and button */
+    transition: background-color 0.2s;
+}
+
+.chat-input-container input:focus {
+    outline: none;
+    background-color: #666;
+}
+
+.chat-input-container button {
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.chat-input-container button:hover {
+    background-color: #666;
+}
+
+.note {
+    margin: 2%;
+    width: 90%;
+    text-align: center;
+}
+
+.note h2, h2 {
+    color: white;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    .chatbot-container {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .chat-header {
+        font-size: 1.2rem;
+    }
+
+    .chat-message {
+        max-width: 90%;
+    }
+
+    .fruit-card {
+        flex: 1 1 calc(50% - 10px); /* Adjust to fit 2 cards per row */
+    }
+
+    .chat-input-container {
+        flex-direction: column;
+    }
+
+    .chat-input-container input {
+        margin-bottom: 5px; /* Less space on small screens */
+    }
+
+    .note h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-header {
+        font-size: 1rem;
+    }
+
+    .fruit-card {
+        flex: 1 1 100%; /* Adjust to fit 1 card per row */
+    }
+
+    .chat-input-container input,
+    .chat-input-container button {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+
+    .note h2 {
+        font-size: 0.9rem;
+    }
+}
